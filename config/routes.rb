@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   
   resources :users
   resources :user_sessions, only: [:new, :create]
-
+  resources :password_resets, only: [:new, :create, :edit, :update]
   get 'pages/home'
 
 
